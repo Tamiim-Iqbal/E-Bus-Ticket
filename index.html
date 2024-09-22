@@ -74,7 +74,7 @@
             </ul>
             <div class="flex items-center gap-5">
                 <button
-                    class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary hover:bg-green-50 hover:border-2">
+                    class="hidden md:block btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary hover:bg-green-50 hover:border-2">
                     <span>Bus</span>
                     <i class="fa-solid fa-van-shuttle"></i>
                 </button>
@@ -214,10 +214,11 @@
                         <span
                             class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-5 sm:right-auto right-16"></span>
                     </div>
-                    <!-- NEW50 -->
+                    <!-- NEW15 -->
                     <div class="text-center z-10">
-                        <h3 class="text-4xl font-bold text-secondary font-RaleWay">NEW50</h3>
+                        <h3 class="text-4xl font-bold text-secondary font-RaleWay">NEW15</h3>
                         <p class="text-lg text-body">Coupon Code</p>
+                        <p class="text-sm text-secondary">Min Purchase 2</p>
                     </div>
                 </div>
                 <div
@@ -245,6 +246,7 @@
                     <div class="text-center z-10">
                         <h3 class="text-4xl font-bold text-secondary font-RaleWay">Couple 20</h3>
                         <p class="text-lg text-body">Coupon Code</p>
+                        <p class="text-sm text-secondary">Min Purchase 2</p>
                     </div>
                 </div>
             </div>
@@ -584,7 +586,7 @@
                     <section class="font-Inter">
                         <div class="bg-[#f7f8f8] p-8 rounded-xl">
                             <h3 class="text-lg font-semibold flex justify-between">
-                                <p class="flex">
+                                <p class="flex gap-1">
                                     <span>Seat</span>
                                     <span id="total-booked"
                                         class="bg-primary w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm">0</span>
@@ -607,8 +609,8 @@
                             <div id="show-coupon-price"
                                 class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between">
                                 <input type="text" class="input my-5 w-full input-primary border-primary" name=""
-                                    id="coupon-field" disabled placeholder="have any coupon?" />
-                                <button id="coupon-btn" disabled class="btn bg-primary">
+                                     id="coupon-field" disabled placeholder="have any coupon?" />
+                                <button id="coupon-btn" disabled class="btn bg-primary hover:bg-green-50 hover:text-primary hover:border-primary">
                                     Apply
                                 </button>
                             </div>
@@ -621,11 +623,11 @@
                         <!-- form section -->
                         <div class="my-5">
                             <label class="form-control w-full my-3">
-                                <span class="label-text font-bold text-base mb-3">Passenger Name*</span>
+                                <span class="label-text font-bold text-base mb-3">Passenger Name</span>
                                 <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
                             </label>
                             <label class="form-control w-full my-3">
-                                <span class="label-text font-bold text-base mb-3">Phone NUmber*</span>
+                                <span class="label-text font-bold text-base mb-3">Phone Number*</span>
                                 <input id="phone-number" type="number" placeholder="Enter Your Phone Number"
                                     class="input input-bordered w-full" />
                             </label>
@@ -634,7 +636,7 @@
                                 <input type="email" placeholder="Enter Your Email ID"
                                     class="input input-bordered w-full" />
                             </label>
-                            <button disabled onclick="my_modal_1.showModal()" id="nextButton"
+                            <button disabled onclick="my_modal_1.showModal()" id="next-button"
                                 class="w-full btn bg-primary mt-5 text-lg text-white uppercase">
                                 Next
                             </button>
